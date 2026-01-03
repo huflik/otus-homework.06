@@ -51,7 +51,7 @@ jobs:
       - name: Rename package
         run: |
           cd build
-          mv matrix-0.0.${{ github.run_number }}-Linux.deb editor.deb
+          mv matrix-0.0.${{ github.run_number }}-Linux.deb matrix.deb
 
       - name: Upload Release Asset
         if: steps.create_release.outputs.id != ''
